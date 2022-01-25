@@ -1,0 +1,33 @@
+.bookingForm{
+    form{
+        .form-group{
+            padding-bottom: 1rem;
+        }
+        .submitButtons{
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width:800px) {
+    .bookingForm{
+        form{
+            .submitButtons{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width:1000px) {
+    .bookingForm{
+        form{
+            .submitButtons{
+                width: 30%;
+            }
+        }
+    }
+}

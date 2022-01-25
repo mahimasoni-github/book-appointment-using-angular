@@ -1,0 +1,34 @@
+
+.timeSlots{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+      margin: auto;
+  
+    .timings{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .eachTimeSlot{
+      padding: 25px 0;
+      // margin: 0px 12em;
+      margin-top: 10px;
+      border: 1px solid #007bff;
+      button{
+        width: 80%;
+        padding: 12px 0;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        
+      }
+      .updateSlots{
+        background-color: #dc3545;
+      }
+      .bookSlots{
+        background-color: #007bff;
+      }
+    }
+  }

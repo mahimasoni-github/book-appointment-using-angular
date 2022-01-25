@@ -1,0 +1,18 @@
+<div class="timeSlots">
+    <ng-container *ngFor="let currentSlot of timeSlot">
+      <div
+        class="eachTimeSlot"
+        [ngStyle]="{'border': currentSlot.booked?'1px solid #dc3545':''}"
+      >
+        <p class="timings">{{currentSlot.startTime}} - {{currentSlot.endTime}}</p>
+        <button
+          [ngClass]="{ 'updateSlots': currentSlot.booked === true,'bookSlots': currentSlot.booked === false}"
+          [routerLink]="['details',currentSlot.id]"
+          (click)="sendSlotData(currentSlot.id)"
+        >
+          {{currentSlot.booked? 'Update This Time Slot' : 'Book This Time Slot'}}
+        </button>
+      </div>
+    </ng-container>
+  </div>
+  

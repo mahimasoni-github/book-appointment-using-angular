@@ -1,0 +1,23 @@
+<div class="letsConnect">
+  <div class="heading">Let's Connect!</div>
+  <hr class="hrLine" />
+  <div class="secondHeading">
+    Tap or click on an available timeslot below to book an appointment.
+  </div>
+  <br />
+  <div class="thirdHeading">
+    Time slots marked in <span style="color: #e55743;"><strong>red</strong></span> are already
+    booked.
+  </div>
+</div>
+<div class="findSlots">
+  <button class="button" [routerLink]="['book-slot']">
+    Click me to check out the slots
+    <div class="button__horizontal"></div>
+	<div class="button__vertical"></div>
+  </button>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
