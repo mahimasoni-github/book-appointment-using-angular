@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import {DetailsService} from '../../app/details.service';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { validateKeywordUsage } from 'node_modules1/ajv/dist/compile/validate/keyword';
+import { validateKeywordUsage } from 'node_modules/ajv/dist/compile/validate/keyword';
 
 @Component({
   selector: 'app-book-slot',
